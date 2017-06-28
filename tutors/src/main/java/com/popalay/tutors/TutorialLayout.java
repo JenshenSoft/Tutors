@@ -138,7 +138,7 @@ public class TutorialLayout extends FrameLayout {
         if (this.bitmap == null) {
             return true;
         }
-        int viewCenter = this.bitmap.getHeight() / 2 + this.y;
+        int viewCenter = (int) (this.bitmap.getHeight() / 2 + this.lastTutorialView.getY());
         int parentCenter = this.getHeight() / 2;
         return viewCenter < parentCenter || parentCenter == 0;
     }
